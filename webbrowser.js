@@ -21,9 +21,9 @@ async function openURL({url, keyword, name, className, openSettings}) {
         await clickClassName(className);
         await clickClassName(openSettings);
     } finally {
-        // setTimeout(() => {
-        //     driver.quit()
-        // }, 5000)
+        setTimeout(() => {
+            driver.quit()
+        }, 5000)
     }
 };
 // GOOGLE SEARCH END ----------------------------------------------------------
